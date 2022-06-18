@@ -56,10 +56,5 @@ const swiper5 = new Swiper('.final-swiper-5', {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
-    },
-    breakpoints: {
-      500: {
-        autoplay: false
-      }
     }
   });

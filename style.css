@@ -33,10 +33,12 @@ header .top-logo {
 }
 
 header .top-logo img {
+    width: 50px;
     transition: transform 0.5s;
 }
 
 header .top-logo:hover img {
+    width: 50px;
     transform: rotateY(180deg);
 }
 
@@ -399,6 +401,22 @@ footer {
     color: grey;
 }
 
+@media (min-width: 1200px){
+    .final .content {
+        left: 35%;
+    }
+
+    .final .content h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+        max-width: 400px;
+    }
+}
+
+
 @media (max-width: 1200px) {
     .final .content {
         top: 0%;
@@ -414,10 +432,20 @@ footer {
         overflow-x: hidden;
     }
 
+    .final .content {
+        left: 25%;
+    }
+
     .final h1 {
         font-size: 2em;
         margin: 0;
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .final .content {
+        left: 15%;
     }
 }
 
@@ -429,8 +457,6 @@ footer {
 
     .final {
         background: #9397a0;
-        animation: changeBg 4s infinite alternate;
-        animation-delay: 1s;
     }
     
     .final .content {
@@ -446,17 +472,8 @@ footer {
     .final-swiper-5 .swiper-slide {
         height: 300px;
         min-width: 0px;
-       
     }
 
-    @keyframes changeBg {
-        from {
-            background: #9397a0;
-        }
-        to {
-            background: #0062f5;
-        }
-    }
 
     .final-swiper-5 .swiper-slide img {
         display: none;
@@ -467,7 +484,6 @@ footer {
         display: none;
     }
 }
-
 
 /* Scroll fade in animation */
 .fade-in {
