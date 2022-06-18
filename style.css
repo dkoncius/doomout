@@ -84,8 +84,6 @@ header img {
     margin: 30px;
 }
 
-
-
 header button {
     height: 50px;
     width: 150px;
@@ -114,13 +112,10 @@ header button:hover {
     transform: scale(1.1);
 }
 
-.screen-wrapper {
+header img {
     max-width: 1200px;
-    margin: auto;
-}
-
-.screen-wrapper img {
     width: 100%;
+    margin: auto;
 }
 
 .subtitle {
@@ -388,6 +383,7 @@ header button:hover {
     margin-top: 50px;
     position: relative;
     overflow: hidden;
+    /* width: 100%; */
 }
 
 
@@ -426,26 +422,54 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+    .features-swipers {
+        gap: 10px;
+    }
+
+    .final {
+        background: #9397a0;
+        animation: changeBg 4s infinite alternate;
+        animation-delay: 1s;
+    }
+    
     .final .content {
-        left: 10%;
+        left: 0;
     }
 
     .final h1 {
         font-size: 1.5em;
-        margin: 0;
+        margin: 20px;
         margin-top: 50px;
     }
 
-    .swiper-3:before,
-    .swiper-3:after {
+    .final-swiper-5 .swiper-slide {
+        height: 300px;
+        min-width: 0px;
+       
+    }
+
+    @keyframes changeBg {
+        from {
+            background: #9397a0;
+        }
+        to {
+            background: #0062f5;
+        }
+    }
+
+    .final-swiper-5 .swiper-slide img {
+        display: none;
+    }
+
+    .providers-swiper-3:before,
+    .providers-swiper-3:after {
         display: none;
     }
 }
 
 
 /* Scroll fade in animation */
-
 .fade-in {
     animation: fade-in 2s;
 }
