@@ -486,7 +486,7 @@ footer {
 }
 
 /* Scroll fade in animation */
-.fade-in {
+/* .fade-in {
     animation: fade-in 2s;
 }
 
@@ -500,4 +500,4 @@ footer {
         transform: translateY(0);
         opacity: 1;
     }
-}
+} */
