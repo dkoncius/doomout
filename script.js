@@ -30,3 +30,35 @@ function changeWidth(){
 }
 
 setInterval(changeWidth, 2000)
+
+// Waitlist
+var waitList = document.getElementById("waitlist")
+var waitListBtn = document.getElementsByClassName("waitListBtn")
+var website = document.getElementById("website")
+var escape = document.getElementById("escape")
+var form = document.querySelector("form")
+var inputs = document.querySelectorAll("input")
+
+for(var x of waitListBtn){
+    x.addEventListener("click", function(){
+        waitList.style.display = "flex"
+        website.style.display = "none"
+    })
+}
+
+
+escape.addEventListener("click", function(){
+    website.style.display = "block"
+    waitList.style.display = "none"
+})
+
+form.addEventListener("submit", function(e){
+    e.preventDefault()
+    website.style.display = "block"
+    waitList.style.display = "none"
+
+    for(var x of inputs){
+        x.value = ""
+    }
+
+})

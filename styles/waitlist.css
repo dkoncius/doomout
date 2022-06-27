@@ -1,0 +1,78 @@
+.waitlist {
+    position: fixed;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.waitlist .escape {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+
+.waitlist .escape i {
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.waitlist .escape:hover i {
+    transform: rotate(135deg);
+    margin-bottom: 10px;
+}
+
+
+.waitlist .escape p {
+    font-size: 0.8em;
+}
+
+.waitlist .text h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.waitlist .text p {
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.waitlist form input {
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 50px;
+    margin: 20px auto;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    font-size: 1.2em;
+    transition: 0.3s
+}
+
+.waitlist form input:focus {
+    border-color: black;
+}
+
+.waitlist form button {
+    cursor: pointer;
+    background: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.waitlist form button:hover {
+    box-shadow: 0 0 5px black,  0 0 5px 5px grey;
+}
